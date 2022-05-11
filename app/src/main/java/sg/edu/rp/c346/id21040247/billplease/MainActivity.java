@@ -104,8 +104,8 @@ public class MainActivity extends AppCompatActivity {
                 //if statement start to check
                 //without if else, the app will keep crashing due to empty String/object error
                 if ((amountInput.getText().toString().trim().isEmpty()) ||
-                    (numOfPaxInput.getText().toString().trim().isEmpty()) ||
-                    //(!svsToggle.isChecked()) || (!gstToggle.isChecked())) - does not work
+                    (numOfPaxInput.getText().toString().trim().isEmpty())||
+                    (!svsToggle.isChecked()) && (!gstToggle.isChecked()))
                 {
                     Toast.makeText(MainActivity.this, "Missing Blanks/Unchecked Boxes", Toast.LENGTH_SHORT).show();
                 }
